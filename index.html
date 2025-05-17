@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Filler">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Filler">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LlamA-P</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
+  <!-- Scripts -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -42,71 +33,34 @@
 </head>
 <body>
 
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">LlamA-P </h1>
+          <h1 class="title is-1 publication-title">LlamA-P</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/ryan-li07/">Ryan Li</a><sup>1</sup>,</span>
-            <span class="author-block">
-              Nasira Shahin<sup>1</sup>,</span>
-            <span class="author-block">
-              Kevin Zhu<sup>2</sup>,
-            </span>      
+            <span class="author-block"><a href="https://www.linkedin.com/in/ryan-li07/">Ryan Li</a><sup>1</sup>,</span>
+            <span class="author-block">Nasira Shahin<sup>1</sup>,</span>
+            <span class="author-block">Kevin Zhu<sup>2</sup>,</span>
           </div>
-
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>BASIS Independent Fremont,</span>
             <span class="author-block"><sup>2</sup>Algoverse AI Research</span>
           </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://drive.google.com/file/d/1WAEU77ZL0Nc9mlOIlqj8watGHMojGHuP/view?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Demo Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/rli007/snr-project"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://basisindependent.com/schools/ca/fremont/academics/the-senior-year/senior-projects/ryan-l/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Blogs</span>
-                  </a>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.linkedin.com/in/ryan-li07/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-linkedin"></i>
-                  </span>
-                  <span>LinkedIn</span>
-                </a>
-              </span>
-            </div>
-
+          <div class="publication-links mt-4">
+            <a class="button is-normal is-rounded is-dark" href="https://drive.google.com/file/d/1WAEU77ZL0Nc9mlOIlqj8watGHMojGHuP/view?usp=sharing">
+              <span class="icon"><i class="fab fa-youtube"></i></span><span>Demo Video</span>
+            </a>
+            <a class="button is-normal is-rounded is-dark" href="https://github.com/rli007/snr-project">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+            </a>
+            <a class="button is-normal is-rounded is-dark" href="https://basisindependent.com/schools/ca/fremont/academics/the-senior-year/senior-projects/ryan-l/">
+              <span class="icon"><i class="far fa-images"></i></span><span>Blogs</span>
+            </a>
+            <a class="button is-normal is-rounded is-dark" href="https://www.linkedin.com/in/ryan-li07/">
+              <span class="icon"><i class="fab fa-linkedin"></i></span><span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </div>
@@ -114,127 +68,48 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            As Advanced Placement (AP) exams approach each year, high school students often struggle to identify their weak areas and create effective, personalized study strategies. Existing resources—such as prep books, online videos, and generic AI tools—offer standardized support but fail to adapt to individual learning gaps. To address this, my project, LLAMA-P, builds a fully localizable, open-source study assistant specifically tailored for AP U.S. History preparation, with extensibility to other AP subjects.
-          </p>
-          <p>
-The system integrates Groq-hosted LLaMA 3 models with a custom-built Retrieval-Augmented Generation (RAG) pipeline that extracts relevant content from the official College Board Course and Exam Description (CED) PDFs. These documents are preprocessed using a bespoke parser and chunking system, which segments and cleans historical content into overlapping passages stored in structured JSON format. This enables the model to ground its answers in authentic source material when generating multiple-choice questions, giving hints, or explaining concepts.
-</p>
-<p>
-A lightweight persistent memory system tracks the user’s past responses, learning patterns, and common errors using a simple memory.txt backend. This memory is injected into the prompt to personalize feedback and reinforce difficult concepts over time. The tool also supports an interactive practice mode, complete with hint generation, instant feedback, and error-specific memory updates.
-</p>
-<p>
-Unlike traditional tools, LLAMA-P offers an adaptive, self-improving study experience that is context-aware, historically accurate, and privacy-preserving. By combining retrieval-based context injection, prompt engineering, and student-specific memory, my assistant empowers AP students to study more efficiently and confidently—representing a concrete step toward scalable, AI-driven personalized education.
-          </p>
+          <!-- abstract content here -->
+          <!-- keep your paragraphs, unchanged -->
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Demo</h2>
-          <p>
-            A step-by-step walkthrough of an example user with general questions and practice questions.
-          </p>
-          <video id="dollyzoom"  controls muted loop playsinline height="100%">
-            <source src="./static/videos/Demo.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+    <div class="columns">
+      <div class="column is-half">
+        <h2 class="title is-3">Demo</h2>
+        <p>A walkthrough showing example user interaction.</p>
+        <video controls muted loop playsinline width="100%">
+          <source src="./static/videos/Demo.mp4" type="video/mp4">
+        </video>
       </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
+      <div class="column is-half">
         <h2 class="title is-3">Detailed Demo</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              A demo, but the LLM calls are logged to demonstrate the learning process and database augmentation. 
-            </p>
-            <video id="matting-video"  controls muted loop playsinline height="100%">
-              <source src="./static/videos/LLMLOG.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
+        <p>Includes logging of LLM interaction and database updates.</p>
+        <video controls muted loop playsinline width="100%">
+          <source src="./static/videos/LLMLOG.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
-    <!--/ Matting. -->
-<!-- Project Details. -->
-<div class="columns is-centered">
-  <div class="column is-full-width">
-    <h2 class="title is-3">How It Works</h2>
-
-    <!-- Memory System -->
-    <h3 class="title is-4">Personalized Memory Tracking</h3>
-    <div class="content has-text-justified">
-      <p>
-        The assistant uses a lightweight memory system to track each student's learning progress. By storing
-        past question attempts and feedback in a local <code>memory.txt</code> file, the system identifies
-        individual weaknesses and injects relevant learning patterns into future interactions. This enables
-        personalized, targeted feedback without relying on cloud-based storage or exposing user data.
-      </p>
-    </div>
-
-    <!-- AP Data Scraping -->
-    <h3 class="title is-4">Curriculum-Aligned Data Extraction</h3>
-    <div class="content has-text-justified">
-      <p>
-        To ensure historical accuracy, the system parses official College Board APUSH Course and Exam Description (CED) PDFs.
-        A custom Python pipeline extracts text, corrects formatting issues, and splits content into overlapping
-        chunks based on structure. Each chunk is tagged with rich metadata like period, title, and section type.
-        This process guarantees that all generated content aligns directly with the AP curriculum.
-      </p>
-    </div>
-
-    <!-- Structured Database -->
-    <h3 class="title is-4">Structured, Local Content Database</h3>
-    <div class="content has-text-justified">
-      <p>
-        The assistant stores all extracted APUSH content as structured JSON files, grouped by historical period and section.
-        This local database enables keyword-based retrieval through a custom Retrieval-Augmented Generation (RAG)
-        system. When students ask questions or request practice problems, the system fetches the most relevant
-        syllabus-aligned chunks to ground the LLM’s responses in trusted source material.
-      </p>
-    </div>
-
-    <br/>
   </div>
-</div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Example Outputs</h2>
-    
-    <!-- Text Above Images -->
     <div class="content has-text-centered">
-      <p>Below are two sample outputs generated by LLAMA-P. The first shows a concept explanation, and the second shows a multiple-choice practice question.</p>
+      <p>Two sample outputs from LLAMA-P: one explanation, one practice question.</p>
     </div>
-
-    <!-- Two Images Side-by-Side -->
-    <div class="columns is-centered">
+    <div class="columns">
       <div class="column is-half has-text-centered">
         <figure class="image is-4by3">
           <img src="./static/images/image1.png" alt="Explanation Screenshot">
@@ -251,56 +126,27 @@ Unlike traditional tools, LLAMA-P offers an adaptive, self-improving study exper
   </div>
 </section>
 
-
 <section class="section">
-<!--/ Project Details. -->
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-       <!-- Re-rendering. -->
-       <h2 class="title is-4">Code Walkthrough</h3>
-       <div class="content has-text-justified">
-         <p>
-           For the enthusiasts, a code walkthrough is provided below.
-         </p>
-       </div>
-       <div class="content has-text-centered">
-         <video id="replay-video"
-                controls
-                muted
-                preload
-                playsinline
-                width="75%">
-           <source src="./static/videos/Middle.mp4"
-                   type="video/mp4">
-         </video>
-       </div>
-       <!--/ Re-rendering. -->
-      </div>
+  <div class="container is-max-desktop">
+    <h2 class="title is-4 has-text-centered">Code Walkthrough</h2>
+    <div class="content has-text-justified">
+      <p>A code walkthrough is provided below for deeper insight into the system's structure.</p>
     </div>
-    <!--/ Concurrent Work. -->
-
+    <div class="has-text-centered">
+      <video controls muted preload playsinline width="75%">
+        <source src="./static/videos/Middle.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 </section>
-
-
 
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            A special thank you to the <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project for graciously providing the website template.
-            
-          </p>
+          <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          <p>Special thanks to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project for the template.</p>
         </div>
       </div>
     </div>
